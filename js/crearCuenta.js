@@ -5,7 +5,8 @@ let usrEmail = document.querySelector('#emailUsuario')
 let usuario = document.querySelector('#nombreUsuario')
 let contraseña = document.querySelector('#contraseñaUsuario')
 
-const datosDelUsuario = []
+// Conseguir el array del local storage
+const datosDelUsuario = JSON.parse(localStorage.getItem('datosUsr')) || []
 
 let flag = true
 
@@ -18,18 +19,31 @@ btnCrearCuenta.addEventListener('click', () => {
         contraseña: contraseña.value
     }
     
+    console.log(datosDelUsuario)
+    console.log(datosUsuarios)
+
     if((datosUsuarios.nombreApellido != "") && (datosUsuarios.usuario != "") && (datosUsuarios.usuario != "") && (datosUsuarios.contraseña != "")) {
 
         if (datosDelUsuario.length == 0) {
+            
+            if (datosUsuarios.contraseña.length < 8) {
 
-            datosDelUsuario.push(datosUsuarios)
+                validaCuenta('Contraseña demasiado corta, debe tener 8 o más caracteres.')
 
-            setTimeout(() => {
-                window.location.assign('account.html')
-            }, 2500);
+            }
 
-            cuentaCreada('Cuenta creada con exito!!')
-            localStorage.setItem('datosUsr', JSON.stringify(datosDelUsuario))
+            else {
+
+                datosDelUsuario.push(datosUsuarios)
+                localStorage.setItem('datosUsr', JSON.stringify(datosDelUsuario))
+
+                setTimeout(() => {
+                    window.location.assign('account.html')
+                }, 2500);
+
+                cuentaCreada('Cuenta creada con exito!')
+
+            }
 
         } else{
 
@@ -118,5 +132,3 @@ const preloader = () => {
     </div>
   </div>`
 }
-
-
