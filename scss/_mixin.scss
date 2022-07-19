@@ -1,0 +1,35 @@
+@mixin box-style($width, $height, $object, $border, $border-radius, $padding,
+$transition, $box-shadow) {
+    width: $width;
+    height: $height;
+    object-fit: $object;
+    border: $border;
+    border-radius: $border-radius;
+    padding: $padding;
+    transition: $transition;
+    box-shadow: $box-shadow;
+}
+
+@mixin box-space($padding, $display, $justify){
+    padding: $padding;
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin hover($scale, $transition) {
+    transform: $scale;
+    transition: $transition;
+}
+
+.container2 {
+    @include box-space(3rem, flex, space-evenly);
+
+    img {
+        @include box-style(300px, 300px, contain, 2px solid #DE6C08, 
+        10px, 20px, all .5s, 1px 1px 20px 1px black);
+
+        &:hover {
+            @include hover(scale(1.2), all .5s)
+        }
+    }
+}

@@ -1,0 +1,75 @@
+main {
+
+    .contenidoIzquierda {
+
+        .formularioCrearCuenta {
+            margin-top: 100px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 120px;
+
+            .labelNombre {
+                margin: 0 auto;
+                margin-bottom: 10px;
+                color: #DE6C08;
+                letter-spacing: 1px;
+                font-size: 18px;
+            }
+
+            .inputCrearCuenta {
+                margin-bottom: 20px;
+            }
+
+            .crearCuenta {
+                margin-top: 30px;
+                background-color: #DE6C08;
+                color: white;
+                padding: 10px;
+                border: 2px solid white;
+                border-radius: 10%;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: white;
+                    color: #DE6C08;
+                    transition: 0.3s;
+                }
+            }
+
+            .animacion {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                margin-top: 10px;
+
+            }
+            
+        }
+
+    }
+
+    .imagenDerecha {
+        
+        position: relative;
+        left: 100px;
+        top: 50px;
+
+        img {
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+            transform: rotate(45deg);
+        }
+    }
+
+}
+
+.alert {
+    color: #DE6C08;
+}
+
+.alertcc {
+    border: 1px solid #DE6C08;
+}

@@ -1,0 +1,146 @@
+.containerFeedTop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 0 20px;
+
+    .titleFeed {
+        text-transform: uppercase;
+        font-size: 25px;
+        color: white;
+        letter-spacing: 3px;
+        font-size: 32px;
+    }
+
+    .pFeed {
+        position: relative;
+        top: 35px;
+        padding: 20px;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+}
+
+.containerFormFeed {
+    box-shadow: 0px 0px 15px 5px black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    margin: 100px;
+
+    .feedForm {
+        display: flex;
+        flex-direction: column;
+
+        .legendFeed {
+            text-align: center;
+            font-weight: bold;
+            position: relative;     
+            top: -20px;
+            color: white;
+            letter-spacing: 10px;
+            font-size: 25px;
+            text-shadow: 5px 15px 4px black;
+        }
+
+        .inputFeed {
+            width: 200px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            margin: 0 auto;
+            background-color: black;
+            border: 2px solid #DE6C08;
+            color: white;
+            outline: none;
+            text-align: center;
+        }
+
+        .labelFeed {
+            padding-bottom: 20px;
+            position: relative;
+            top: 15px;
+            margin: 0 auto;
+            resize: none;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .feedButtons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 1rem;
+
+            #buttonForm {
+                width: 80px;
+                height: 50px;
+            }
+
+            .button1 {
+                cursor: pointer;
+                background-color: black;
+                color: white;
+                border: 2px solid #DE6C08;
+                border-radius: 10px;
+                letter-spacing: 3px;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    transition: 1s;
+                }
+            }
+
+            .button2 {
+                cursor: pointer;
+                border: 2px solid #DE6C08;
+                border-radius: 10px;
+                letter-spacing: 3px;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    transition: 1s;
+                }
+            }
+        }
+
+        .inputContact {
+            background-color: black;
+            border: 2px solid #DE6C08;
+            border-radius: 10px;
+            outline: none;
+            color: white;
+            text-align: center;
+        }
+
+        #textbox {
+            resize: none;
+            height: 10rem;
+        }
+    }
+}
+
+.finalTitle {
+    text-align: center;
+    position: relative;
+    top: -50px;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 430px) {
+
+    .containerFormFeed {
+        padding: 0 130px 0 130px;
+        position: relative;
+        left: -30px;
+    }
+    
+}

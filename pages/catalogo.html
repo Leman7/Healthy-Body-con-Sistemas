@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthy Body - Catálogo</title>
+        <link rel="shorcut icon" href="../assets/logo2.png">
+        <!-- <link rel="stylesheet" href="../stylesheet/style.css"> -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Inspiration&family=Josefin+Sans:wght@300&family=Ramaraja&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubballi&family=Inspiration&family=Josefin+Sans:wght@300&family=Ramaraja&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script defer type="module" src="../js/logica.js"></script>
+
+    </head>
+
+<body>
+
+    <header class="header_index">
+
+        <div>
+
+            <nav>
+
+                <div class="logo">
+                    <a href="../index.html"><img src="../assets/logo2.png" alt="Logo website" class="logo" ></a>
+                </div>
+
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="navMenu">
+                    <li><a href="../index.html" class="boton-index">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+
+                    <div class="upright">
+                      <a href="shopping.html"><span class="shopping"><i class="fa-solid fa-cart-shopping"></i></span></a>
+                      <hr class="vLine">
+                      <a href="account.html"><span class="account"><i class="fa-regular fa-id-card"></i></span></a>
+                  </div>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+      <h1 class="tituloCatalogo">Nuestros productos</h1>
+
+      <div class="catalogoContainer" id="divsCatalogo">
+
+      </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <main class="catalogo__mainContainer">
+
+        <h1 class="titulocatalogo">Nuestros productos</h1>
+        
+        <form action="" class="form__indexSearch"></form>
+            <div class="index__search" id="catalogoEdit">
+                <input class="searchBar" type="text" name="busqueda" placeholder="Busca un producto" id="producto">
+                <button class="searchButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>                
+            </div>
+        </form>
+
+        <div class="rows-catalogo">
+
+            <div class="rows">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/proteina.png" class="card-img-top" alt="proteina">
+                    <div class="card-body">
+                      <h5 class="card-title">proteina</h5>
+                      <ul>
+                          <li class="card-text">Cantidad: 1kg</li>
+                          <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarProteina">
+                      </div>
+                    </div>
+                </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="../assets/creatina.png" class="card-img-top" alt="creatina">
+                    <div class="card-body">
+                      <h5 class="card-title">creatina</h5>
+                      <ul>
+                        <li class="card-text">Cantidad: 1kg</li>
+                        <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarCreatina">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="../assets/vitamina.png" class="card-img-top" alt="vitamina">
+                    <div class="card-body">
+                      <h5 class="card-title">vitamina</h5>
+                      <ul>
+                        <li class="card-text">Cantidad: 1kg</li>
+                        <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarVitamina">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="../assets/aminoacidos.png" class="card-img-top" alt="aminoacidos">
+                    <div class="card-body">
+                      <h5 class="card-title">aminoacidos</h5>
+                      <ul>
+                        <li class="card-text">Cantidad: 1kg</li>
+                        <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarAminoacidos">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="../assets/testosterona.png" class="card-img-top" alt="testosterona">
+                    <div class="card-body">
+                      <h5 class="card-title">testosterona</h5>
+                      <ul>
+                        <li class="card-text">Cantidad: 1kg</li>
+                        <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarTestosterona">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="../assets/turbogel.png" class="card-img-top" alt="turbogel">
+                    <div class="card-body">
+                      <h5 class="card-title">turbo gel</h5>
+                      <ul>
+                        <li class="card-text">Cantidad: 1kg</li>
+                        <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarTurbogel">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="../assets/combo.png" class="card-img-top" alt="combo gym">
+                    <div class="card-body">
+                      <h5 class="card-title">combo gym</h5>
+                      <ul>
+                        <li class="card-text">Cantidad: 1kg</li>
+                        <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarCombo">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="../assets/bolso.png" class="card-img-top" alt="bolso gym">
+                    <div class="card-body">
+                      <h5 class="card-title">bolso deportivo</h5>
+                      <ul>
+                        <li class="card-text">Cantidad: 1kg</li>
+                        <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarBolso">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="../assets/shaker.png" class="card-img-top" alt="shaker">
+                    <div class="card-body">
+                      <h5 class="card-title">shaker</h5>
+                      <ul>
+                        <li class="card-text">Cantidad: 1kg</li>
+                        <li class="card-text">precio: $1500</li>
+                      </ul>
+                      <div class="catalogo-buttons">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <input type="button" class="btn btn-primary" value="Agregar" id="agregarShaker">
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+
+    </main> -->
+
+    <footer id="bot">
+
+        <div class="containerfot">
+
+            <div class="box">
+                <a href="mailto:mmehrwaldt@gmail.com"><span class="i1"><i class="fa-solid fa-envelope"></i></span></a>
+            </div>
+
+            <div class="box"><img src="../assets/logo2.png" alt="Logo website" class="logofot"></div>
+
+            <div class="box">
+                <a href="https://wa.link/gby8w6" target="_blank"><span class="i2"><i class="fa-brands fa-whatsapp"></i></span></a>
+            </div>
+
+        </div>
+
+        <h6>Made by Martin Mehrwaldt</h6>
+        
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

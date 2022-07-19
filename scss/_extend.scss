@@ -1,0 +1,9 @@
+.img-background {
+    @extend .header_index;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

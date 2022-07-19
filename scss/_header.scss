@@ -1,0 +1,180 @@
+.header_index {
+
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-left: 15px;
+        }
+        .bar-btn {
+            margin-right: 1rem;
+            cursor: pointer;
+            i {
+                font-size: 25px;
+                color: white;
+                margin-right: 25px;
+            }
+        }
+        .navMenu {
+            position: absolute;
+            width: 100%;
+            height: 0;
+            top: 100px;
+            background-color: rgba(0, 0, 0, 0.90);
+            text-align: center;
+            transition: all .5s;
+            z-index: 10;
+            li {
+                display: none;
+                line-height: 100px;
+                margin: 50px 0;
+                transition: all 5s;
+                a {
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-decoration: none;
+                    .active, &:hover {
+                        color: #DE6C08;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-text {
+        padding: 0 30px;
+        margin-top: 300px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        h2 {
+            font-size: 90px;
+        }
+        span {
+            color: #DE6C08;
+        }
+        h1 {
+            font-weight: 100;
+        }
+    }
+
+    #check:checked ~ .navMenu {
+        height: 100vh;
+    }
+    
+    #check:checked ~ .navMenu li {
+        display: block;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    .header_index {
+        nav {
+            height: 100px;
+            .bar-btn {
+                display: none;
+               
+            }
+            .navMenu {
+                position: sticky;
+                display: flex;
+                height: 100px;
+                top: -100px;
+                background: none;
+                transition: none;
+                text-align: center;
+                margin-right: 50px;
+                li {
+                    display: inline-block;
+                    line-height: 100px;
+                    margin: 0 20px;
+                    transition: none;
+                    a {
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                .upright  {
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    left: 1100px;
+                    top: 2rem;
+
+                    .shopping {
+                        padding-right: 1rem;
+                        i {
+                            font-size: 25px;
+                            color: #DE6C08;
+                            &:hover {
+                                transition: .3s;
+                                color: white;
+                            }
+                        }
+                    }
+                    hr {
+                        height: 20px;
+                        position: relative;
+                        top: 2px;
+                        border-color: white;
+                    }
+                    .account{ 
+                        padding-left: 1rem;
+                        font-size: 32px;
+                        position: relative;
+                        top: -5px;
+                        color: #DE6C08;
+                        &:hover {
+                            transition: .3s;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-text {
+            padding: 0 30px;
+            margin-top: 300px;
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 70px;
+                margin-bottom: 30px;
+            }
+        }
+      
+    }
+
+    .boton-index {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 780px) {
+    .header_index {
+        .banner-text {
+            position: relative;
+            top: -200px;
+        }
+    }
+}

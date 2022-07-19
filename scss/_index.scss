@@ -1,0 +1,121 @@
+main {
+
+    .index__title {
+        color: white;
+        letter-spacing: 5px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: -50px;
+        text-transform: uppercase;
+        margin: 0 auto;  
+    }
+
+    .index__search {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50px;
+
+        input {
+            position: relative;
+            top: 70px;
+            left: 0px;
+            padding: 1rem;
+            width: 30rem;
+            border: 2px solid #DE6C08;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            letter-spacing: 3px;
+            outline: none;
+
+            &::placeholder {
+                color: white;
+                letter-spacing: 4px;
+            }
+        }
+
+        button {
+            position: relative;
+            left: 5px;
+            top: 70px;
+            outline: none;
+            background-color: black;
+            border: 2px solid #DE6C08;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                outline: none;
+                background-color: white;
+                transition: all 1s;
+            }
+
+            i {
+                font-size: 32px;
+                height: 3rem;
+                width: 3rem;
+                position: relative;
+                top: 8px;
+                color: white;
+
+                &:hover {
+                    color: black;
+                    transition: all 1s;
+                }
+            }
+        }
+    }
+
+    .container1 {
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+
+        .video {
+            box-shadow: 1px 1px 20px 20px black;
+            margin-top: 10rem;
+        }
+    }
+
+    .boxadv {
+        color: white;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 1px;
+
+        p {
+            a {
+                text-decoration: none;
+                color: #DE6C08;
+
+                &:hover {
+                    text-shadow: 1px 1px 1px gray;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+    }
+
+    .boxadv {
+        text-align: center;
+    }
+
+    .item {
+        margin-bottom: 40px;
+    }
+}

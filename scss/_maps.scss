@@ -1,0 +1,33 @@
+$estilos-botones:(
+    margin: 40px,
+    space: 10px 20px,
+    font-color: #DE6C08,
+    color: #fff,
+    border-radio: 10%,
+    transition-time: 0.5s,
+);
+
+.header_button1 {
+    margin-right: map-get($estilos-botones, margin);
+    padding: map-get($estilos-botones, space);
+    background-color: map-get($estilos-botones, font-color);
+    color: map-get($estilos-botones, color);
+    border-radius: map-get($estilos-botones, border-radio);
+    &:hover {
+        background-color: map-get($estilos-botones, color);
+        color: map-get($estilos-botones, font-color);
+        transition: map-get($estilos-botones, transition-time);
+    }
+}
+
+.header_button2 {
+    background-color: map-get($estilos-botones, color);
+    padding: map-get($estilos-botones, space);
+    border-radius: map-get($estilos-botones, border-radio);
+    color: map-get($estilos-botones, font-color);
+    &:hover {
+        background-color: map-get($estilos-botones, font-color);
+        color: map-get($estilos-botones, color);
+        transition: map-get($estilos-botones, transition-time);
+    }
+}

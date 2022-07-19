@@ -1,0 +1,106 @@
+main {
+    h1 {
+        text-align: center;
+        color: white;
+        margin-top: 3rem;
+        letter-spacing: 3px;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        margin-top: 3rem;
+        font-size: 20px;
+        input {
+            background-color: transparent;
+            color: #DE6C08;
+            border: none;
+            cursor: pointer;
+            margin-left: 1.2rem;
+            font-size: 16px;
+            &:hover {
+                transition: 0.3s;
+                color: white;
+            }
+        }
+    }
+
+    .secondP {
+        text-align: center;
+        color: white;
+        letter-spacing: 1px;
+        margin-top: 3rem;
+    }
+
+    .formAccount {
+        text-align: center;
+        margin-top: 3rem;
+
+        .nick {
+            display: inline-flex;
+            flex-direction: column;
+            margin-right: 1rem;
+            .nName {
+                position: relative;
+                left: -10px;
+                color: #DE6C08;
+            }
+
+            input {
+                width: 140px;
+                outline: none;
+                background-color: black;
+                border-color: #DE6C08;
+                border-radius: 5%;
+                color: white;
+                letter-spacing: 1px;
+            }
+        }
+
+        .pass {
+            display: inline-flex;
+            flex-direction: column;
+            margin-left: 1rem;
+            color: #DE6C08;
+
+            input {
+                width: 140px;
+                outline: none;
+                background-color: black;
+                border-color: #DE6C08;
+                border-radius: 5%;
+                color: white;
+                letter-spacing: 1px;
+            }
+        }
+
+        .buttonLogin {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+            width: 10rem;
+            align-items: center;
+            cursor: pointer;
+            background-color: #DE6C08;
+            color: white;
+            outline: none;
+            border: none;
+            &:hover {
+                transition: 0.5s;
+                color: #DE6C08;
+                background-color: white;
+            }
+        }
+
+    }
+
+}
+
+.alert {
+    color: #DE6C08;
+}
+
+.alertcc {
+    border: 1px solid #DE6C08;
+}
