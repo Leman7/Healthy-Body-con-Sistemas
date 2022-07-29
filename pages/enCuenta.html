@@ -25,7 +25,6 @@
 
 <body>
     
-</body>
     <header class="header_index">
 
         <div>
@@ -34,6 +33,12 @@
 
                 <div class="logo">
                     <a href="../index.html"><img src="../assets/logo2.png" alt="Logo website" class="logo" ></a>
+                </div>
+
+                <div class="cajaCuentasShopping">
+                    <a href="shopping.html"><span class="carrito"><i class="fa-solid fa-cart-shopping"></i></span></a>
+                    <hr class="lineaMedia">
+                    <a href="account.html"><span class="cuenta"><i class="fa-regular fa-id-card"></i></span></a>
                 </div>
 
                 <input type="checkbox" id="check">
@@ -45,7 +50,6 @@
                     <li><a href="../index.html" class="boton-index">Home</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
                     <li><a href="feedback.html">Feedback</a></li>
 
                     <div class="upright">
@@ -74,10 +78,14 @@
                     
                 </ul>
                 
-                <p class="tituloPlanes">Planes GYM</p>
-                <select class="diasGym" id="planes">
-
-                </select>
+                <div>
+                    <p class="tituloPlanes">Planes GYM</p>
+                    <select class="diasGym" id="planes">
+                    
+                    </select>
+                    <input type="button" class="agregarPlan" id="btnAgregarPlan" value="agregar plan">
+                </div>
+                
 
                 <div class="estadoCuenta" id="estadoDeCuenta">
                     
@@ -92,7 +100,14 @@
 
                 <p class="panelControl">Panel de control</p>
 
-                <input type="button" id="cerrarSesion" value="Cerrar sesion">
+                <div class="botonesEnCuenta">
+                    <input type="button" id="cerrarSesion" class="btnCerrarSesion" value="Cerrar sesion">
+                    <input type="button" id="borrarCuenta" class="btnCerrarSesion btnBorrarCuenta" value="Borrar Cuenta">
+                </div>
+                
+                <div class="planesDisponibles" id="planesActivos">
+                    
+                </div>
 
             </div>
         </div>
@@ -104,7 +119,26 @@
 
     <footer>
 
+        <div class="containerfot">
 
+            <div class="box">
+                <a href="mailto:mmehrwaldt@gmail.com"><span class="i1"><i class="fa-solid fa-envelope"></i></span></a>
+            </div>
+
+            <div class="box">
+                <img src="../assets/logo2.png" alt="Logo website" class="logofot">
+            </div>
+
+            <div class="box">
+                <a href="https://wa.link/gby8w6" target="_blank"><span class="i2"><i class="fa-brands fa-whatsapp"></i></span></a>
+            </div>
+
+        </div>
+
+        <h6>Made by Martin Mehrwaldt</h6>
+        
     </footer>
+
+</body>
 
 </html>

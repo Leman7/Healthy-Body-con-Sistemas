@@ -73,3 +73,39 @@ main {
 .alertcc {
     border: 1px solid #DE6C08;
 }
+
+@media screen and (max-width: 768px) {
+    
+    main {
+
+        height: 100vh;
+
+        .contenidoIzquierda {
+
+            .formularioCrearCuenta {
+                margin-top: 100px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                left: 140px;
+            }
+
+        }
+
+        .imagenDerecha {
+        
+            position: relative;
+            left: -5px;
+            top: 50px;
+    
+            img {
+                width: 500px;
+                height: 500px;
+                object-fit: contain;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+}

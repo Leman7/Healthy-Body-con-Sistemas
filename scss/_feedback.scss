@@ -1,3 +1,7 @@
+.cajaCuentasShopping {
+    display: hidden;
+}
+
 .containerFeedTop {
     display: flex;
     align-items: center;
@@ -136,6 +140,29 @@
 }
 
 @media screen and (max-width: 430px) {
+
+    .cajaCuentasShopping {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 220px;
+        right: 100px;
+
+        i{
+            color: #DE6C08;
+            font-size: 22px;
+            padding: 8px;
+        }
+
+        .lineaMedia {
+            height: 25px;
+            position: relative;
+            top: 5px;
+        }
+    }
+    .upright {
+        display: none;
+    }
 
     .containerFormFeed {
         padding: 0 130px 0 130px;

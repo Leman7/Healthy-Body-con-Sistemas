@@ -50,6 +50,13 @@ main {
             }
         }
 
+        .totalAPagar {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            bottom: 170px;
+        }
+
         .separaCarrito {
             position: relative;
             top: 80px;
@@ -93,3 +100,107 @@ main {
     }
 }
 
+@media screen and (max-width: 768px) {
+    
+    main {
+        .mainBox {
+            margin: 0 auto;
+            width: 380px;
+            height: 700px;
+            background-color: black;
+            margin-bottom: 5rem;
+            border: 3px solid #DE6C08;
+            border-radius: 5%;
+            box-shadow: 0px 1px 10px 1px #DE6C08;
+            display: flex;
+            justify-content: space-around;
+
+            .separaCarrito {
+                display: none;
+            }
+
+            .productosAgregados {
+                width: 100px;
+                text-align: center;
+                                
+                .contenedorCarrito {
+                    margin-top: 20px;
+                    position: relative;
+                    left: 70px;
+                    width: 200px;          
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+    
+                    .contenedorProductosAgregados {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 2rem;
+                    }
+    
+                    .imgCarrito {
+                        width: 80px;
+                        height: 80px;
+                        object-fit: contain;
+                    }
+        
+                    .btnEliminar {
+                        width: 50px;
+                        
+                    }
+    
+                    .productoCarrito {
+                        color: white;
+                        list-style: none;
+                    }
+                }
+            }
+
+            .totalAPagar {
+                width: 250px;
+                height: 250px;
+                position: absolute;
+                bottom: 300px;
+            }
+    
+            .botonesCarrito {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                position: relative;
+                left: -50px;
+                top: -50px;
+                
+                .allB {
+                    margin: 10px;
+                    background-color: #DE6C08;
+                    padding: 0.7rem;
+                    border: 2px solid white;
+                    border-radius: 5%;
+                    color: white;
+                    cursor: pointer;
+                    width: 80px;
+                    height: 25px;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: white;
+                        border: 2px solid #DE6C08;
+                        color: #DE6C08;
+                        transition: 0.5s;
+                    }
+                }
+    
+                .comprarAhora {
+                    position: relative;
+                    top: 0px;
+                }
+    
+                .borrarProductos {
+                    position: relative;
+                    top: 0px;
+                }
+            }
+
+        }
+    }
+}

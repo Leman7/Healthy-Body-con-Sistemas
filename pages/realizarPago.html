@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Healthy Body - Nosotros</title>
+            <link rel="shorcut icon" href="../assets/logo2.png">
+            <!-- <link rel="stylesheet" href="../stylesheet/style.css"> -->
+            <link rel="stylesheet" href="../css/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Inspiration&family=Josefin+Sans:wght@300&family=Ramaraja&display=swap" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubballi&family=Inspiration&family=Josefin+Sans:wght@300&family=Ramaraja&display=swap" rel="stylesheet">
+            <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script defer src="../js/shopping.js"></script>
+            <script defer type="module" src="../js/logica.js"></script>
+            <script defer src="../js/realizarPago.js"></script>
+
+        </head>
+    </head>
+<body>
+
+    <header class="header_index">
+
+        <div>
+
+            <nav>
+
+                <div class="logo">
+                    <a href="../index.html"><img src="../assets/logo2.png" alt="Logo website" class="logo" ></a>
+                </div>
+
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="navMenu">
+                    <li><a href="../index.html" class="boton-index">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="realizarPago.html">Feedback</a></li>
+
+                    <div class="upright">
+                        <a href="shopping.html"><span class="shopping"><i class="fa-solid fa-cart-shopping"></i></span></a>
+                        <hr class="vLine">
+                        <a href="account.html"><span class="account"><i class="fa-regular fa-id-card"></i></span></a>
+                    </div>
+                    
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        <h1 class="tu">Terminar la compra</h1>
+
+        <div class="mainBox mainBoxPagar" >
+            <p class="tuCompra">Tu compra</p>
+
+            <div class="contenedorMainBox" id="cajaPagar">
+
+            </div>
+
+            <div class="finalTotal" id="totalAPagarCarrito">
+
+            </div>
+            
+            <form action="check" class="formularioPagar">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="APELLIDO">
+                <input type="text" name="email" id="email" placeholder="email">
+                <input type="button" value="comprar ahora" class="comprarAhora buttons" id="buttonComprarAhora">
+                <input type="button" value="volver" class="volverCarrito buttons" id="buttonVolverCarrito">
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="containerfot">
+
+            <div class="box">
+                <a href="mailto:mmehrwaldt@gmail.com"><span class="i1"><i class="fa-solid fa-envelope"></i></span></a>
+            </div>
+
+            <div class="box">
+                <img src="../assets/logo2.png" alt="Logo website" class="logofot">
+            </div>
+
+            <div class="box">
+                <a href="https://wa.link/gby8w6" target="_blank"><span class="i2"><i class="fa-brands fa-whatsapp"></i></span></a>
+            </div>
+
+        </div>
+
+        <h6>Made by Martin Mehrwaldt</h6>
+        
+    </footer>
+    
+</body>
+</html>

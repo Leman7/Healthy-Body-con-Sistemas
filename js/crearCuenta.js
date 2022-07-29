@@ -18,9 +18,6 @@ btnCrearCuenta.addEventListener('click', () => {
         usuario: usuario.value,
         contraseña: contraseña.value
     }
-    
-    console.log(datosDelUsuario)
-    console.log(datosUsuarios)
 
     if((datosUsuarios.nombreApellido != "") && (datosUsuarios.usuario != "") && (datosUsuarios.usuario != "") && (datosUsuarios.contraseña != "")) {
 

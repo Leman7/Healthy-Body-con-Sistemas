@@ -14,6 +14,8 @@ for (let i = 0; i < array.length; i++) {
             if (array[i].contraseña == pass.value) {
                 flag = true
 
+                localStorage.setItem('usuario', JSON.stringify(array[i]))
+
                 setTimeout(() => {
                     window.location.assign('enCuenta.html')
                 }, 2500);

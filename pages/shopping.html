@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Inspiration&family=Josefin+Sans:wght@300&family=Ramaraja&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubballi&family=Inspiration&family=Josefin+Sans:wght@300&family=Ramaraja&display=swap" rel="stylesheet">
+        <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script defer src="../js/shopping.js"></script>
         <script defer type="module" src="../js/logica.js"></script>
     </head>
@@ -32,6 +33,12 @@
                     <a href="../index.html"><img src="../assets/logo2.png" alt="Logo website" class="logo" ></a>
                 </div>
 
+                <div class="cajaCuentasShopping">
+                    <a href="shopping.html"><span class="carrito"><i class="fa-solid fa-cart-shopping"></i></span></a>
+                    <hr class="lineaMedia">
+                    <a href="account.html"><span class="cuenta"><i class="fa-regular fa-id-card"></i></span></a>
+                </div>
+
                 <input type="checkbox" id="check">
                 <label for="check" class="bar-btn">
                     <i class="fa-solid fa-bars"></i>
@@ -41,8 +48,8 @@
                     <li><a href="../index.html" class="boton-index">Home</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
                     <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="realizarPago.html">Feedback</a></li>
 
                     <div class="upright">
                         <a href="shopping.html"><span class="shopping"><i class="fa-solid fa-cart-shopping"></i></span></a>
@@ -68,6 +75,10 @@
                 <ul id="productos" class="contenedorCarrito">
 
                 </ul>
+            </div>
+
+            <div class="totalAPagar" id="contenedorTotalPagar">
+
             </div>
 
             <hr class="separaCarrito">

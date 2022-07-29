@@ -148,6 +148,9 @@ body {
     position: relative;
     top: -200px; } }
 
+.cajaCuentasShopping {
+  display: none; }
+
 main .index__title {
   color: white;
   letter-spacing: 5px;
@@ -223,6 +226,22 @@ main .boxadv {
       text-shadow: 1px 1px 1px gray; }
 
 @media screen and (max-width: 768px) {
+  .cajaCuentasShopping {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 220px;
+    right: 100px; }
+    .cajaCuentasShopping i {
+      color: #DE6C08;
+      font-size: 22px;
+      padding: 8px; }
+    .cajaCuentasShopping .lineaMedia {
+      height: 25px;
+      position: relative;
+      top: 5px; }
+  .upright {
+    display: none; }
   .container2 {
     flex-direction: column;
     align-items: center; }
@@ -234,6 +253,9 @@ main .boxadv {
     text-align: center; }
   .item {
     margin-bottom: 40px; } }
+
+.cajaCuentasShopping {
+  display: hidden; }
 
 .main-container_us {
   display: flex;
@@ -265,6 +287,22 @@ main .boxadv {
           text-shadow: 1px 1px 10px #DE6C08; }
 
 @media screen and (max-width: 1200px) {
+  .cajaCuentasShopping {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 220px;
+    right: 100px; }
+    .cajaCuentasShopping i {
+      color: #DE6C08;
+      font-size: 22px;
+      padding: 8px; }
+    .cajaCuentasShopping .lineaMedia {
+      height: 25px;
+      position: relative;
+      top: 5px; }
+  .upright {
+    display: none; }
   .main-container_us {
     flex-direction: column; }
     .main-container_us .box-left {
@@ -274,6 +312,9 @@ main .boxadv {
         height: 400px; }
     .main-container_us .box-right {
       width: 400px; } }
+
+.cajaCuentasShopping {
+  display: hidden; }
 
 main .tituloCatalogo {
   text-align: center; }
@@ -341,65 +382,37 @@ main .contieneProductos {
 .alert {
   color: #DE6C08; }
 
-.contact__mainContainer .contact__subContainer {
-  height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .contact__mainContainer .contact__subContainer input {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    outline: none;
-    background-color: black;
-    border: 2px solid #DE6C08;
-    color: white;
-    border-radius: 10px; }
-    .contact__mainContainer .contact__subContainer input::placeholder {
-      color: white;
-      letter-spacing: 2px;
-      text-align: center; }
-  .contact__mainContainer .contact__subContainer textarea {
-    padding: 1rem;
-    margin-bottom: 2rem;
-    resize: none;
-    border-radius: 10px;
-    outline: none;
-    background-color: black;
-    color: white;
-    border: 2px solid #DE6C08; }
-    .contact__mainContainer .contact__subContainer textarea::placeholder {
-      color: white;
-      letter-spacing: 2px;
-      font-size: 15px;
-      text-align: center; }
-  .contact__mainContainer .contact__subContainer h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    margin: 2rem;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 30px; }
-  .contact__mainContainer .contact__subContainer p {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: white;
-    letter-spacing: 3px; }
-  .contact__mainContainer .contact__subContainer .contact__buttonContainer button {
-    padding: 1rem;
-    border: none;
-    background-color: black;
-    color: white;
-    letter-spacing: 3px;
-    border: 2px solid #DE6C08;
-    border-radius: 10px;
-    cursor: pointer; }
-    .contact__mainContainer .contact__subContainer .contact__buttonContainer button:hover {
-      color: black;
-      font-weight: bold;
-      background-color: white;
-      transition: all 1s; }
+.alertcc {
+  border: 1px solid #DE6C08; }
+
+@media screen and (max-width: 768px) {
+  .cajaCuentasShopping {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 220px;
+    right: 100px; }
+    .cajaCuentasShopping i {
+      color: #DE6C08;
+      font-size: 22px;
+      padding: 8px; }
+    .cajaCuentasShopping .lineaMedia {
+      height: 25px;
+      position: relative;
+      top: 5px; }
+  .upright {
+    display: none; }
+  main .catalogoContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 10px; } }
+
+.cajaCuentasShopping {
+  display: hidden; }
 
 .containerFeedTop {
   display: flex;
@@ -508,6 +521,22 @@ main .contieneProductos {
   font-size: 20px; }
 
 @media screen and (max-width: 430px) {
+  .cajaCuentasShopping {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 220px;
+    right: 100px; }
+    .cajaCuentasShopping i {
+      color: #DE6C08;
+      font-size: 22px;
+      padding: 8px; }
+    .cajaCuentasShopping .lineaMedia {
+      height: 25px;
+      position: relative;
+      top: 5px; }
+  .upright {
+    display: none; }
   .containerFormFeed {
     padding: 0 130px 0 130px;
     position: relative;
@@ -628,6 +657,11 @@ main .mainBox {
       main .mainBox .productosAgregados .contenedorCarrito .productoCarrito {
         color: white;
         list-style: none; }
+  main .mainBox .totalAPagar {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 170px; }
   main .mainBox .separaCarrito {
     position: relative;
     top: 80px;
@@ -656,6 +690,78 @@ main .mainBox {
     main .mainBox .botonesCarrito .borrarProductos {
       position: relative;
       top: 80px; }
+
+@media screen and (max-width: 768px) {
+  main .mainBox {
+    margin: 0 auto;
+    width: 380px;
+    height: 700px;
+    background-color: black;
+    margin-bottom: 5rem;
+    border: 3px solid #DE6C08;
+    border-radius: 5%;
+    box-shadow: 0px 1px 10px 1px #DE6C08;
+    display: flex;
+    justify-content: space-around; }
+    main .mainBox .separaCarrito {
+      display: none; }
+    main .mainBox .productosAgregados {
+      width: 100px;
+      text-align: center; }
+      main .mainBox .productosAgregados .contenedorCarrito {
+        margin-top: 20px;
+        position: relative;
+        left: 70px;
+        width: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, auto); }
+        main .mainBox .productosAgregados .contenedorCarrito .contenedorProductosAgregados {
+          display: flex;
+          flex-direction: row;
+          margin-top: 2rem; }
+        main .mainBox .productosAgregados .contenedorCarrito .imgCarrito {
+          width: 80px;
+          height: 80px;
+          object-fit: contain; }
+        main .mainBox .productosAgregados .contenedorCarrito .btnEliminar {
+          width: 50px; }
+        main .mainBox .productosAgregados .contenedorCarrito .productoCarrito {
+          color: white;
+          list-style: none; }
+    main .mainBox .totalAPagar {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      bottom: 300px; }
+    main .mainBox .botonesCarrito {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      position: relative;
+      left: -50px;
+      top: -50px; }
+      main .mainBox .botonesCarrito .allB {
+        margin: 10px;
+        background-color: #DE6C08;
+        padding: 0.7rem;
+        border: 2px solid white;
+        border-radius: 5%;
+        color: white;
+        cursor: pointer;
+        width: 80px;
+        height: 25px;
+        text-align: center; }
+        main .mainBox .botonesCarrito .allB:hover {
+          background-color: white;
+          border: 2px solid #DE6C08;
+          color: #DE6C08;
+          transition: 0.5s; }
+      main .mainBox .botonesCarrito .comprarAhora {
+        position: relative;
+        top: 0px; }
+      main .mainBox .botonesCarrito .borrarProductos {
+        position: relative;
+        top: 0px; } }
 
 main h1 {
   text-align: center;
@@ -740,6 +846,11 @@ main .formAccount {
 .alertcc {
   border: 1px solid #DE6C08; }
 
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    height: 80vh; } }
+
 main .contenidoIzquierda .formularioCrearCuenta {
   margin-top: 100px;
   padding: 10px;
@@ -789,6 +900,26 @@ main .imagenDerecha {
 .alertcc {
   border: 1px solid #DE6C08; }
 
+@media screen and (max-width: 768px) {
+  main {
+    height: 100vh; }
+    main .contenidoIzquierda .formularioCrearCuenta {
+      margin-top: 100px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 140px; }
+    main .imagenDerecha {
+      position: relative;
+      left: -5px;
+      top: 50px; }
+      main .imagenDerecha img {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+        transform: rotate(90deg); } }
+
 .cajaPrincipal {
   width: 100%;
   height: 500px;
@@ -813,16 +944,6 @@ main .imagenDerecha {
         list-style: none;
         line-height: 30px;
         letter-spacing: 1px; }
-    .cajaPrincipal .cajaIzquierda .estadoCuenta {
-      position: relative;
-      top: 25px;
-      left: -40px; }
-      .cajaPrincipal .cajaIzquierda .estadoCuenta .circulo {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: green;
-        position: relative; }
     .cajaPrincipal .cajaIzquierda .diasGym {
       position: relative;
       left: 100px;
@@ -832,6 +953,20 @@ main .imagenDerecha {
       color: white; }
       .cajaPrincipal .cajaIzquierda .diasGym .diasG {
         line-height: 10px; }
+    .cajaPrincipal .cajaIzquierda .agregarPlan {
+      position: relative;
+      left: 100px;
+      color: white;
+      border: 1px solid white;
+      background-color: #DE6C08;
+      padding: 5px;
+      margin-left: 3px;
+      cursor: pointer; }
+      .cajaPrincipal .cajaIzquierda .agregarPlan:hover {
+        border: 1px solid #DE6C08;
+        background-color: black;
+        color: white;
+        transition: 0.3s; }
   .cajaPrincipal .imagenMedio {
     position: relative; }
     .cajaPrincipal .imagenMedio img {
@@ -848,6 +983,171 @@ main .imagenDerecha {
     left: -50px;
     border: 2px dashed #DE6C08;
     border-radius: 15%; }
+    .cajaPrincipal .cajaDerecha .botonesEnCuenta {
+      display: flex;
+      flex-direction: column; }
+    .cajaPrincipal .cajaDerecha .btnCerrarSesion {
+      margin-top: 30px;
+      padding: 10px;
+      border: 1px solid #DE6C08;
+      background-color: black;
+      width: 40%;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      left: 105px; }
+      .cajaPrincipal .cajaDerecha .btnCerrarSesion:hover {
+        transition: 0.3s;
+        opacity: 0.6; }
+
+.alert {
+  color: #DE6C08; }
+
+.alertcc {
+  border: 1px solid #DE6C08; }
+
+@media screen and (max-width: 768px) {
+  main {
+    height: 1000px; }
+    main .cajaPrincipal {
+      width: 100px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      main .cajaPrincipal .cajaIzquierda {
+        padding: 0rem;
+        width: 400px;
+        height: 500px;
+        background-color: black;
+        position: relative;
+        top: 320px;
+        left: 5px;
+        border: 2px dashed #DE6C08;
+        border-radius: 15%; }
+        main .cajaPrincipal .cajaIzquierda .listaDatos {
+          margin-top: 20px; }
+          main .cajaPrincipal .cajaIzquierda .listaDatos .datos {
+            text-align: center;
+            color: white;
+            list-style: none;
+            line-height: 30px;
+            letter-spacing: 1px; }
+        main .cajaPrincipal .cajaIzquierda .tituloPlanes {
+          position: relative;
+          top: -20px; }
+        main .cajaPrincipal .cajaIzquierda .diasGym {
+          position: relative;
+          top: -20px;
+          left: 80px;
+          padding: 5px;
+          border: 2px solid #DE6C08;
+          background-color: black;
+          color: white; }
+          main .cajaPrincipal .cajaIzquierda .diasGym .diasG {
+            line-height: 10px; }
+        main .cajaPrincipal .cajaIzquierda .agregarPlan {
+          position: relative;
+          left: 80px;
+          top: -20px;
+          color: white;
+          border: 1px solid white;
+          background-color: #DE6C08;
+          padding: 5px;
+          margin-left: 3px;
+          cursor: pointer; }
+          main .cajaPrincipal .cajaIzquierda .agregarPlan:hover {
+            border: 1px solid #DE6C08;
+            background-color: black;
+            color: white;
+            transition: 0.3s; }
+      main .cajaPrincipal .imagenMedio {
+        position: relative;
+        top: 300px;
+        left: 80px; }
+        main .cajaPrincipal .imagenMedio img {
+          width: 250px;
+          height: 250px;
+          object-fit: contain; }
+      main .cajaPrincipal .cajaDerecha {
+        padding: 1rem;
+        width: 370px;
+        height: 400px;
+        background-color: black;
+        position: relative;
+        top: 300px;
+        left: 5px;
+        border: 2px dashed #DE6C08;
+        border-radius: 15%; }
+        main .cajaPrincipal .cajaDerecha .botonesEnCuenta {
+          display: flex;
+          flex-direction: column; }
+        main .cajaPrincipal .cajaDerecha .btnCerrarSesion {
+          margin-top: 30px;
+          padding: 10px;
+          border: 1px solid #DE6C08;
+          background-color: black;
+          width: 40%;
+          color: white;
+          cursor: pointer;
+          position: relative;
+          left: 105px; }
+          main .cajaPrincipal .cajaDerecha .btnCerrarSesion:hover {
+            transition: 0.3s;
+            opacity: 0.6; } }
+
+.mainBoxPagar .tuCompra {
+  position: absolute;
+  text-align: center; }
+
+.mainBoxPagar .contenedorMainBox {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 300px; }
+  .mainBoxPagar .contenedorMainBox .contenedorProductosAgregados {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: -50px;
+    height: 150px; }
+    .mainBoxPagar .contenedorMainBox .contenedorProductosAgregados .imagenProductosAgregados .imgCarrito {
+      width: 80px;
+      height: 80px;
+      object-fit: contain; }
+    .mainBoxPagar .contenedorMainBox .contenedorProductosAgregados .detalleProductosAgregados .productoCarrito {
+      color: white;
+      list-style: none; }
+
+.mainBoxPagar .finalTotal {
+  position: absolute;
+  bottom: 470px; }
+
+.mainBoxPagar .formularioPagar {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  position: absolute;
+  bottom: 260px;
+  left: 880px; }
+  .mainBoxPagar .formularioPagar .buttons {
+    background-color: #DE6C08;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer; }
+    .mainBoxPagar .formularioPagar .buttons:hover {
+      opacity: 0.7; }
+  .mainBoxPagar .formularioPagar input {
+    padding: 5px;
+    margin-bottom: 7px;
+    border: 2px solid #DE6C08;
+    background-color: black;
+    color: white; }
+    .mainBoxPagar .formularioPagar input::placeholder {
+      color: white;
+      text-align: center; }
 
 .alert {
   color: #DE6C08; }

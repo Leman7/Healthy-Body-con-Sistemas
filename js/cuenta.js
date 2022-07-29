@@ -1,17 +1,23 @@
 let lista = document.querySelector('#listaDatosUser')
 let planes = document.querySelector('#planes')
 let btnCerrarSesion = document.querySelector('#cerrarSesion')
+let btnBorrarCuenta = document.querySelector('#borrarCuenta')
+let btnAgregarPlan = document.querySelector('#btnAgregarPlan')
+let planesActivos = document.querySelector('#planesActivos')
+
+let arrayPlanes = []
+
+let usr = [JSON.parse(localStorage.getItem('usuario'))]
 
 const planesGym = [{dias: 2, precio: '1500'},
                    {dias: 3, precio: '2000'},
                    {dias: 5, precio: '2500'}]
 
-
 let arrayDatosUsr = JSON.parse(localStorage.getItem('datosUsr'))
 
 function cargarDatos() {
 
-    let map = arrayDatosUsr.map((x) => {
+    let map = usr.map((x) => {
 
         const {nombreApellido, email, usuario, contraseña} = x
 
@@ -22,7 +28,7 @@ function cargarDatos() {
     })
 
     lista.innerHTML = map.join('')
-
+    
 }
 
 function cargarPlanes() {
@@ -37,19 +43,37 @@ function cargarPlanes() {
 
     })
 
-
-
     planes.innerHTML = map.join('')
 }
 
-btnCerrarSesion.addEventListener('click', () => {
 
-    validaCierreSesion('Esta seguro que desea cerrar sesión?')
+btnAgregarPlan.addEventListener('click', () => {
+
+    for (i = 0; i < planesGym.length; i++) {
+        planElegidoGym = (planes.selectedOptions[0].value)
+
+        console.log(planElegidoGym)
+
+        let planElegido = `<p>Plan activo:</p>
+                           <p>${planElegidoGym}</p>
+                          `
+        
+        planesActivos.innerHTML = planElegido
+        
+    }
 
 })
 
-cargarPlanes()
-cargarDatos()
+
+btnBorrarCuenta.addEventListener('click', () => {
+    borrarCuenta()
+})
+
+
+btnCerrarSesion.addEventListener('click', () => {
+    validaCierreSesion('Esta seguro que desea cerrar sesión?')
+})
+
 
 const validaCierreSesion = (mensaje) => {
     Swal.fire({
@@ -84,6 +108,7 @@ const validaCierreSesion = (mensaje) => {
 const cerrandoSesion = (mensaje) => {
     Swal.fire({
         title: mensaje,
+        icon: 'success',
         showConfirmButton: false,
         position: 'top',
         toast: true,
@@ -96,3 +121,6 @@ const cerrandoSesion = (mensaje) => {
 
       })
 }
+
+cargarPlanes()
+cargarDatos()
